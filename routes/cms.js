@@ -12,6 +12,7 @@ router.post('/addProduct', (req, res) => {
   ProductController.addProduct(req.files, req.body)
     .then(result => {
       res.json({ message: 'successfully added product' });
+      console.log(res.json({message: 'successful test'}));
     })
     .catch(err => {
       res.json({ message: 'error in adding product' });

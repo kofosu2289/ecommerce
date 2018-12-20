@@ -3,12 +3,12 @@
   <head>
     <title>About Us</title>
     <% include partials/head-tags %>
-    <link rel = "stylesheet" href = "/stylesheets/products.css"
+    <link rel = "stylesheet" href = "/stylesheets/products.css">
   </head>
   <body>
     <% include partials/header %>
     <main class="container d-flex justify-content-center">
-        <form action="/cms/addProduct" class="product-form w-50">
+        <form action="/cms/addProduct" class="product-form w-50" method = "POST" enctype = "multipart/form-data">
           <input type="text" name="name" placeholder="Name" />
           <textarea name="desc" placeholder="Description"></textarea>
           <input type="number" name="price" placeholder="Price" />
